@@ -1,4 +1,4 @@
-# JonathanPollyn-SQL-Server-to-Snowflake-Healthcare-Reporting-Migration
+# SQL-Server-to-Snowflake-Healthcare-Reporting-Migration
 
 ## Project Overview
 This project presents a production-grade migration of healthcare data from a relational SQL database to Stolake, enabling advanced analytics and reporting.
