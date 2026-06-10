@@ -1,0 +1,40 @@
+appointmentsFileName = Appointments.csv
+providerFileName = Provider.csv
+pharmacyFileName = Pharmacy.csv
+patientsFileName = Patients.csv
+vitalsFileName = Vitals.csv
+medicationFileName = Medication.csv
+insuranceFileName = Insurance.csv
+labresultsFileName = Lab_results.csv
+inpatientsFileName = Inpatients.csv
+diagnosesFileName = Diagnoses.csv
+baseFolder = C:\Business\AWS\AWS Projects\Snowflake-AWS\SQL-Server-to-Snowflake-Healthcare-Reporting-Migration\data_exports\
+
+
+
+
+ProviderFullFilePath = @[User::baseFolder]+@[User::providerFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+PharmacyFullFilePath = @[User::baseFolder]+@[User::pharmacyFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+PatientFullFilePath = @[User::baseFolder]+@[User::patientsFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+OutpatientsFullFilePath = @[User::baseFolder]+@[User::outpatientsFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+outpatientsFileName = Outpatients.csv
+
+MedicationFullFilePath = @[User::baseFolder]+@[User::medicationFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+InsuranceFullFilePath = @[User::baseFolder]+@[User::insuranceFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+InpatientsFullFilePath = @[User::baseFolder]+@[User::inpatientsFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+DiagnosesFullFilePath = @[User::baseFolder]+@[User::diagnosesFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+
+
+AppointmentsFullFilePath = @[User::baseFolder]+@[User::appointmentsFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+LabResultsFullFilePath = @[User::baseFolder]+@[User::labresultsFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
+
+VitalsFullFilePath = @[User::baseFolder]+@[User::vitalsFileName]+"_"+(DT_WSTR,4)YEAR(GETDATE())+RIGHT("0" + (DT_WSTR,2)MONTH(GETDATE()),2)+RIGHT("0" + (DT_WSTR,2)DAY(GETDATE()),2)+".csv"
